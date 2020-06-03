@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="pokemon" src="./assets/pokemon.png" />
+    <Pokedex class="poke" msg="Pokeguía" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Pokedex from "./components/Pokedex.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Pokedex,
+  },
+};
 </script>
 
 <style>
@@ -23,6 +23,17 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: #feca30;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 50%;
+  padding-top: 40px;
+}
+
+.poke {
+  padding-bottom: 80px;
 }
 </style>
